@@ -1,10 +1,8 @@
 import React from 'react';
-import Header2 from '../../components/Header2';
 
 const acceuil = () => {
   return (
     <div>
-      <Header2 />
       <h1>Accueil</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
