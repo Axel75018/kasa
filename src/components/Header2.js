@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/images/LOGO.png";
 const Header2 = () => {
   return (
@@ -7,12 +7,22 @@ const Header2 = () => {
       <header>
         <img src={logo} alt="KASA" className="Logo"></img>
         <nav>
-          <Link to="/" className="linkNav">
+          <NavLink
+            to="/"
+            className={(nav) =>
+              nav.isActive ? "nav-active linkNav" : "linkNav"
+            }
+          >
             Accueil
-          </Link>
-          <Link to="/a-propos" className="linkNav">
+          </NavLink>
+          <NavLink
+            to="/a-propos"
+            className={(nav) =>
+              nav.isActive ? "nav-active linkNav" : "linkNav"
+            }
+          >
             A propos
-          </Link>
+          </NavLink>
         </nav>
       </header>
     </div>

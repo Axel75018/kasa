@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import LOGOnb from "../assets/images/LOGOnb.png";
 
 const Footer2 = () => {
   return (
     <div>
-      <h2>Footer</h2>
+      <footer>
+        <img src={LOGOnb} alt="Kasa" className="LogoFooter"></img>
+        <p>© 2020 Kasa. All rights reserved</p>
+      </footer>
     </div>
   );
 };
