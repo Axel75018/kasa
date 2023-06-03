@@ -1,0 +1,43 @@
+
+
+$ColorFirst: #FF6060;;
+$ColorSecond : #FFFFFF;
+$bckColorTextCollapse:#F6F6F6;
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+// $boxgradient:background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+body{
+font-family: Montserrat;
+}
+
+header {
+    color: $ColorFirst;
+    height : 70px;
+    margin: 40px 0  ;
+  
+        color: #FF6060;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: nowrap; */
+        justify-content: space-between;
+        align-items: center;
+    
+
+    img.logo { 
+        width: 210px;
+        height:68px;
+    }
+    nav { top:50%;
+            a.linkNav {
+            color: $ColorFirst;
+            font-size: 1.1rem;
+            margin-left: 2rem;
+
+
+        }
+    }   
+
+}
