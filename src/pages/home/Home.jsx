@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import Card from "../../components/Card";
 
 const acceuil = () => {
   return (
@@ -17,6 +18,7 @@ const acceuil = () => {
         cum aspernatur quibusdam exercitationem doloremque! Nisi aperiam
         assumenda illum praesentium placeat suscipit.
       </p>
+      <Card />
     </div>
   );
 };
