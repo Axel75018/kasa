@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
 }
 
 header {
-  color: #FF6060;
+  color: #ff6060;
   height: 70px;
   margin: 40px 0;
-  color: #FF6060;
+  color: #ff6060;
   display: flex;
   flex-direction: row;
   /* flex-wrap: nowrap; */
@@ -22,7 +22,40 @@ header nav {
   top: 50%;
 }
 header nav a.linkNav {
-  color: #FF6060;
+  color: #ff6060;
   font-size: 1.1rem;
   margin-left: 2rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: right;
+  text-decoration-line: none;
+  text-transform: uppercase;
+}
+header nav a.linkNav:hover {
+  border-bottom: #ff6060 3px solid;
+  padding-bottom: 5px;
+}
+
+div.cardListContainer {
+  width: 95%;
+  background-color: #f6f6f6;
+}
+div.cardListContainer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+div.cardListContainer ul li.Card {
+  list-style: none;
+  width: 340px;
+}
+div.cardListContainer ul li.Card img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
