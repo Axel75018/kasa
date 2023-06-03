@@ -37,6 +37,10 @@ header nav a.linkNav:hover {
   border-bottom: #ff6060 3px solid;
   padding-bottom: 5px;
 }
+header nav .nav-active {
+  border-bottom: #ff6060 3px solid;
+  padding-bottom: 5px;
+}
 
 div.cardListContainer {
   width: 95%;
@@ -58,4 +62,19 @@ div.cardListContainer ul li.Card {
 div.cardListContainer ul li.Card img {
   width: 100%;
   height: 100%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+footer img {
+  width: 122px;
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */
