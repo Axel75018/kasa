@@ -5,7 +5,6 @@ import BanniereHome from "../../components/banniere/BanniereHome";
 const acceuil = () => {
   return (
     <div className="home">
-      <h1>Accueil</h1>
       <BanniereHome />
 
       <Card />
