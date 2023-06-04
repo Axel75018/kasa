@@ -15,6 +15,7 @@ div.cardListContainer ul {
   align-items: center;
   margin: 0 auto;
   flex-wrap: wrap;
+  list-style: none;
 }
 div.cardListContainer ul li.Card {
   margin: 25px;
