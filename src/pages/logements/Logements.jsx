@@ -8,6 +8,7 @@ const Logements = () => {
   const isValidId = logementjson.find((logement) => logement.id === id);
 
   useEffect(() => {
+    //exécuté au "mount" du composant
     if (!isValidId) {
       navigate("/404");
     }
