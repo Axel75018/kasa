@@ -7,8 +7,8 @@ const Card = () => {
         {Data.map((logement) => (
           <li className="Card" key={logement.id}>
             <article key={logement.id}>
-              <h2>{logement.title}</h2>
               <img src={logement.cover} alt={logement.title} />
+              <h2>{logement.title}</h2>
             </article>
           </li>
         ))}

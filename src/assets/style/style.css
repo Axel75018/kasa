@@ -3,6 +3,42 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+div.cardListContainer {
+  width: 95%;
+  background-color: rgb(246, 246, 246);
+}
+div.cardListContainer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+div.cardListContainer ul li.Card {
+  margin: 25px;
+}
+div.cardListContainer ul li.Card article {
+  background: linear-gradient(180deg, #ff6060 30%, #863939);
+  border-radius: 10px;
+  width: 340px;
+  height: 340px;
+}
+div.cardListContainer ul li.Card article img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+div.cardListContainer ul li.Card article h2 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-align: left;
+  margin: 10px 0 0 20px;
+}
+
 footer {
   background-color: black;
   color: white;
@@ -19,7 +55,7 @@ footer img {
 }
 
 header {
-  color: #ff6060;
+  color: rgb(255, 96, 96);
   height: 70px;
   margin: 40px 0;
   color: #ff6060;
@@ -37,7 +73,7 @@ header nav {
   top: 50%;
 }
 header nav a.linkNav {
-  color: #ff6060;
+  color: rgb(255, 96, 96);
   font-size: 1.1rem;
   margin-left: 2rem;
   font-size: 24px;
@@ -49,32 +85,10 @@ header nav a.linkNav {
   text-transform: uppercase;
 }
 header nav a.linkNav:hover {
-  border-bottom: #ff6060 3px solid;
+  border-bottom: rgb(255, 96, 96) 3px solid;
   padding-bottom: 5px;
 }
 header nav .nav-active {
-  border-bottom: #ff6060 3px solid;
+  border-bottom: rgb(255, 96, 96) 3px solid;
   padding-bottom: 5px;
-}
-
-div.cardListContainer {
-  width: 95%;
-  background-color: #f6f6f6;
-}
-div.cardListContainer ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-div.cardListContainer ul li.Card {
-  list-style: none;
-  width: 340px;
-}
-div.cardListContainer ul li.Card img {
-  width: 100%;
-  height: 100%;
 }/*# sourceMappingURL=style.css.map */
