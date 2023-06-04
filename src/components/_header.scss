@@ -39,25 +39,3 @@ header {
     }
   }
 }
-div.cardListContainer {
-  width: 95%;
-  background-color: $bckColor;
-  ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    flex-wrap: wrap;
-
-    li.Card {
-      list-style: none;
-      width: 340px;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-}
