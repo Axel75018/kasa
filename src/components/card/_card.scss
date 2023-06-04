@@ -14,32 +14,34 @@ div.cardListContainer {
     list-style: none;
     margin: 0;
     padding: 0;
+    a {
+      text-decoration: none;
+      li.Card {
+        margin: 15px;
+        article {
+          // background-color: $ColorFirst;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 96, 96, 1) 50%,
+            rgba(0, 0, 0, 0.68) 140%
+          );
+          border-radius: 10px;
+          width: 340px;
+          height: 340px;
+          img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+          }
+          h2 {
+            font-size: 18px;
+            color: white;
+            font-weight: 500;
 
-    li.Card {
-      margin: 15px;
-      article {
-        // background-color: $ColorFirst;
-        background: linear-gradient(
-          180deg,
-          rgba(255, 96, 96, 1) 50%,
-          rgba(0, 0, 0, 0.68) 140%
-        );
-        border-radius: 10px;
-        width: 340px;
-        height: 340px;
-        img {
-          width: 100%;
-          height: 80%;
-          object-fit: cover;
-          border-radius: 10px 10px 0 0;
-        }
-        h2 {
-          font-size: 18px;
-          color: white;
-          font-weight: 500;
-
-          text-align: left;
-          margin: 10px 0 0 20px;
+            text-align: left;
+            margin: 10px 0 0 20px;
+          }
         }
       }
     }
