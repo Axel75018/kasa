@@ -1,5 +1,5 @@
 import React from "react";
-import LOGOnb from "../assets/images/LOGOnb.png";
+import LOGOnb from "../../assets/images/LOGOnb.png";
 
 const Footer2 = () => {
   return (

@@ -94,4 +94,8 @@ header nav a.linkNav:hover {
 header nav .nav-active {
   border-bottom: rgb(255, 96, 96) 3px solid;
   padding-bottom: 5px;
+}
+
+h1 {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
