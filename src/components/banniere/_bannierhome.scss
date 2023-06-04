@@ -1,3 +1,22 @@
-h1 {
-  color: red;
+div.banniereHome {
+  align-items: center;
+
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 160px;
+  background-image: url("../images/banner-home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    border-radius: 25px;
+    object-fit: cover;
+    opacity: 0.7;
+    width: 100%;
+  }
+  h1 {
+    color: red;
+  }
 }

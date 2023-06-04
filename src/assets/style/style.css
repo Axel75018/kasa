@@ -96,6 +96,24 @@ header nav .nav-active {
   padding-bottom: 5px;
 }
 
-h1 {
+div.banniereHome {
+  align-items: center;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 160px;
+  background-image: url("../images/banner-home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.banniereHome img {
+  border-radius: 25px;
+  object-fit: cover;
+  opacity: 0.7;
+  width: 100%;
+}
+div.banniereHome h1 {
   color: red;
 }/*# sourceMappingURL=style.css.map */
