@@ -3,7 +3,7 @@
 div.cardListContainer {
   padding: 35px;
   background-color: $bckColor;
-  border-radius: 10px 10px 0 0;
+  border-radius: $radiusFirst;
   ul {
     width: 100%;
     display: flex;
@@ -25,7 +25,7 @@ div.cardListContainer {
             rgba(255, 96, 96, 1) 50%,
             rgba(0, 0, 0, 0.68) 140%
           );
-          border-radius: 10px;
+          border-radius: $radiusSecond;
           width: 340px;
           height: 340px;
           img {
