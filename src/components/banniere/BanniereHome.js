@@ -3,7 +3,7 @@ import React from "react";
 const BanniereHome = () => {
   return (
     <div className="banniereHome">
-      <h1>Chez vous, partout et ailleurs</h1>
+      <h2>Chez vous, partout et ailleurs</h2>
     </div>
   );
 };

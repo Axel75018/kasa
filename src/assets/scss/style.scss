@@ -5,3 +5,7 @@
 @import "../../components/banniere/bannierhome";
 @import "../../components/banniere/bannierhome";
 @import "../../pages/404/err404";
+
+body {
+  max-width: 1440px;
+}
