@@ -1,0 +1,25 @@
+div.carousel__container {
+  margin: 120px 0;
+  height: 415px;
+
+  .carousel__slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+
+    &.active {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+    }
+  }
+}
+.compteur {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: 1.5rem;
+  z-index: 10;
+}

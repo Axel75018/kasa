@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import logementJson from "../../data/logements.json";
+import Carousel from "../../components/carousel/Carousel";
 
 const Logements = () => {
   const { id } = useParams();
@@ -24,7 +25,7 @@ const Logements = () => {
       <div>
         <h1>Logements ok</h1>
         <article>
-          <img src={ficheLogement.cover} alt={ficheLogement.title} />
+          <Carousel pictures={ficheLogement.pictures} />
           <h2>{ficheLogement.title}</h2>
         </article>
       </div>
