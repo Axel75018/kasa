@@ -8,6 +8,11 @@ div.carousel__container {
   height: 415px;
   position: relative;
   z-index: 2;
+  display: none;
+  &.active {
+    display: block;
+    //   transition: display 1s ease-in-out;
+  }
 
   .carousel__slide {
     position: relative;
@@ -39,10 +44,19 @@ img.chevron {
   top: 207px;
   border: 1px solid black;
   z-index: 10;
+
   &.gauche {
     left: 10px;
   }
   &.droite {
     right: 10px;
   }
+}
+.active {
+  display: block;
+  //   transition: display 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
 }

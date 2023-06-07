@@ -1,18 +1,37 @@
 import React, { useState } from "react";
 import chevronGauche from "../../assets/images/chevronGauche.png";
 import chevronDroite from "../../assets/images/chevronDroite.png";
+
 const Carousel = ({ pictures }) => {
-  // on utilise pictures qui vient des props
-  const [index, setIndex] = useState(0);
+  const [indexActuel, setIndex] = useState(0);
+  const nbrPhoto = pictures.length;
 
   return (
     <section className="carousel">
-      <img className="chevron gauche" src={chevronGauche} alt="Précédent" />
-      <img className="chevron droite" src={chevronDroite} alt="Suivant" />
+      <img
+        className={`chevron gauche ${pictures.length === 0 ? "hidden" : ""}`}
+        src={chevronGauche}
+        alt="Précédent"
+        onClick={() =>
+          setIndex(indexActuel > 0 ? indexActuel - 1 : nbrPhoto - 1)
+        }
+      />
+      <img
+        className={`chevron droite ${pictures.length === 0 ? "hidden" : ""}`}
+        src={chevronDroite}
+        alt="Suivant"
+        onClick={() =>
+          setIndex(indexActuel < nbrPhoto - 1 ? indexActuel + 1 : 0)
+        }
+      />
       {pictures.map((image, index) => (
-        <div className="carousel__container">
+        <div
+          key={index}
+          className={`carousel__container ${
+            indexActuel === index ? "active" : ""
+          }`}
+        >
           <img
-            key={index}
             className="carousel__slide"
             src={image}
             alt={`carousel ${index}`}

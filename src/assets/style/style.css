@@ -547,6 +547,10 @@ div.carousel__container {
   height: 415px;
   position: relative;
   z-index: 2;
+  display: none;
+}
+div.carousel__container.active {
+  display: block;
 }
 div.carousel__container .carousel__slide {
   position: relative;
@@ -583,4 +587,12 @@ img.chevron.gauche {
 }
 img.chevron.droite {
   right: 10px;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
