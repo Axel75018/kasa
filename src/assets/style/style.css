@@ -557,7 +557,7 @@ div.carousel__container.active {
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
-div.carousel__container .carousel__slide {
+div.carousel__container img.carousel__slide {
   position: relative;
   top: 0;
   left: 0;
