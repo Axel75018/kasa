@@ -16,18 +16,25 @@ div.cardListContainer {
     padding: 0;
     a {
       text-decoration: none;
+      margin: 0;
+
       li.Card {
+        border-radius: $radiusSecond;
         margin: 15px;
+
         article {
           position: relative;
           border-radius: $radiusSecond;
           width: 340px;
           height: 340px;
+          -webkit-box-shadow: 11px 9px 15px 2px rgba(0, 0, 0, 0.41);
+          box-shadow: 11px 9px 15px 2px rgba(0, 0, 0, 0.41);
+
           img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 10px 10px 0 0;
+            border-radius: $radiusSecond;
             z-index: 1;
           }
           &::before {
@@ -52,11 +59,20 @@ div.cardListContainer {
             color: white;
             font-weight: 500;
             position: absolute;
-            bottom: 20px;
+            top: 278px;
             left: 20px;
+            line-height: 26px;
             z-index: 3;
+            margin: 0;
+            pointer-events: none;
+            height: 52px;
           }
         }
+      }
+      :hover {
+        transition: box-shadow 0.4s ease-in-out;
+        // -webkit-box-shadow: 11px 9px 15px 2px rgba(0, 0, 0, 0.41);
+        box-shadow: 11px 9px 15px 2px rgba(0, 0, 0, 0.41);
       }
     }
   }
