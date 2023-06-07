@@ -9,9 +9,13 @@ div.carousel__container {
   position: relative;
   z-index: 2;
   display: none;
+  opacity: 0;
+  transition-delay: 250ms;
   &.active {
     display: block;
-    //   transition: display 1s ease-in-out;
+    transition-delay: 250ms;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
   }
 
   .carousel__slide {
@@ -24,11 +28,6 @@ div.carousel__container {
     z-index: 5;
     pointer-events: none;
     border-radius: $radiusFirst;
-
-    &.active {
-      opacity: 1;
-      transition: opacity 1s ease-in-out;
-    }
   }
 }
 .compteur {
@@ -41,8 +40,8 @@ div.carousel__container {
 
 img.chevron {
   position: absolute;
-  top: 207px;
-  border: 1px solid black;
+  top: 50%;
+  cursor: pointer;
   z-index: 10;
 
   &.gauche {
@@ -52,6 +51,7 @@ img.chevron {
     right: 10px;
   }
 }
+
 .active {
   display: block;
   //   transition: display 1s ease-in-out;

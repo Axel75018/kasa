@@ -548,9 +548,14 @@ div.carousel__container {
   position: relative;
   z-index: 2;
   display: none;
+  opacity: 0;
+  transition-delay: 250ms;
 }
 div.carousel__container.active {
   display: block;
+  transition-delay: 250ms;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 div.carousel__container .carousel__slide {
   position: relative;
@@ -563,10 +568,6 @@ div.carousel__container .carousel__slide {
   pointer-events: none;
   border-radius: 25px;
 }
-div.carousel__container .carousel__slide.active {
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
-}
 
 .compteur {
   position: absolute;
@@ -578,8 +579,8 @@ div.carousel__container .carousel__slide.active {
 
 img.chevron {
   position: absolute;
-  top: 207px;
-  border: 1px solid black;
+  top: 50%;
+  cursor: pointer;
   z-index: 10;
 }
 img.chevron.gauche {
