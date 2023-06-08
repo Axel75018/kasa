@@ -30,12 +30,13 @@ const Logements = () => {
     return (
       <div>
         <article>
-          <Carousel pictures={ficheLogement.pictures} /> /
+          <Carousel pictures={ficheLogement.pictures} />
           {/* / Passe les tableaux images du logement au composant Carousel */}
           <Collapse2
             titre={"Description"}
             contenu={ficheLogement.description}
           />
+          <Collapse2 titre={"Équipements"} contenu={ficheLogement.equipments} />
         </article>
       </div>
     );
