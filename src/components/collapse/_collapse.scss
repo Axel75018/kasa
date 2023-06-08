@@ -64,3 +64,12 @@ div.collapseContainer {
     }
   }
 }
+.rotateUp {
+  transform: rotate(360deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotateDown {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}

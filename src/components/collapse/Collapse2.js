@@ -4,24 +4,23 @@ import down from "../../assets/images/down.png";
 
 const Collapse2 = ({ titre, contenu, hauteurTitreCollapse }) => {
   const [collapse, setCollapse] = useState(false);
-  const [classMontre, setClassMontre] = useState("cache");
 
   const togleCollapse = () => {
-    if (!collapse) {
-      setCollapse(true);
-      setClassMontre("montre");
-    } else {
-      setCollapse(false);
-      setClassMontre("cache");
-    }
+    setCollapse((prevCollapse) => !prevCollapse);
   };
+
   return (
     <div className="collapseContainer">
       <div style={{ height: hauteurTitreCollapse }} className="collapseTitre">
         <h4>{titre}</h4>
-        <img src={down} alt="up" onClick={togleCollapse} />
+        <img
+          src={collapse ? up : down}
+          alt={collapse ? "up" : "down"}
+          onClick={togleCollapse}
+          className={`chevronTogle ${collapse ? "rotateUp" : "rotateDown"}`} // change la classe en fonction de l'état du collapse
+        />
       </div>
-      <div className={`collapseContenu ${classMontre} `}>
+      <div className={`collapseContenu ${collapse ? "montre" : "cache"}`}>
         <p>{contenu}</p>
       </div>
     </div>
