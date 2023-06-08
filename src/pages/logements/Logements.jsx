@@ -33,12 +33,24 @@ const Logements = () => {
         <article>
           <Carousel pictures={ficheLogement.pictures} />
           {/* / Passe les tableaux images du logement au composant Carousel */}
+
           <Collapse2
             titre={"Description"}
             contenu={ficheLogement.description}
             hauteurTitreCollapse={hauteurTitreCollapse}
           />
-          <Collapse2 titre={"Équipements"} contenu={ficheLogement.equipments} />
+
+          <Collapse2
+            titre={"Équipements"}
+            contenu={
+              <ul>
+                {ficheLogement.equipments.map((equipement, index) => (
+                  <li key={index}>{equipement}</li>
+                ))}
+              </ul>
+            }
+            hauteurTitreCollapse={hauteurTitreCollapse}
+          />
         </article>
       </div>
     );
