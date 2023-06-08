@@ -1,0 +1,11 @@
+section.logementCollapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  div.collapseContainer {
+    width: 582px;
+    div.collapseContenu {
+      min-height: 250px;
+    }
+  }
+}

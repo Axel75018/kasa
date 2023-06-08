@@ -496,7 +496,6 @@ div.banniereHome {
           justify-content: center;
   width: 100%;
   height: 223px;
-  background-image: url("../../assets/images/banner-home.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -520,40 +519,6 @@ div.banniereHome h2 {
   left: 50%; /* centré horizontalement */
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%); /* décalage pour un centrage parfait */
-}
-
-div.page404 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: rgb(255, 96, 96);
-}
-div.page404 h1 {
-  margin-top: 60px;
-  font-size: 288px;
-  margin-bottom: 30px;
-  font-weight: 700;
-  line-height: 411px;
-}
-div.page404 h2 {
-  font-size: 36px;
-  margin-bottom: 120px;
-  font-weight: 500;
-  line-height: 51px;
-}
-
-.linkAccueil {
-  font-size: 18px;
-  color: rgb(255, 96, 96);
-  font-weight: 500;
-  margin: 0 0 0 0;
 }
 
 section.carousel {
@@ -632,7 +597,6 @@ img.chevron.droite {
 div.collapseContainer {
   margin: 0;
   padding: 0;
-  width: 50%;
   position: relative;
 }
 div.collapseContainer div.collapseContenu {
@@ -643,12 +607,19 @@ div.collapseContainer div.collapseContenu {
   padding: 40px;
   z-index: 1;
 }
+div.collapseContainer div.collapseContenu ul {
+  list-style-type: none;
+  margin: 0;
+}
+div.collapseContainer div.collapseContenu ul li {
+  margin: 0;
+}
 div.collapseContainer div.collapseContenu p {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.67px;
   color: rgb(255, 96, 96);
 }
 div.collapseContainer div.collapseTitre {
@@ -686,4 +657,57 @@ div.collapseContainer div.collapseTitre img {
 }
 div.collapseContainer div.collapseTitre img:hover {
   cursor: pointer;
+}
+
+div.page404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgb(255, 96, 96);
+}
+div.page404 h1 {
+  margin-top: 60px;
+  font-size: 288px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 411px;
+}
+div.page404 h2 {
+  font-size: 36px;
+  margin-bottom: 120px;
+  font-weight: 500;
+  line-height: 51px;
+}
+
+.linkAccueil {
+  font-size: 18px;
+  color: rgb(255, 96, 96);
+  font-weight: 500;
+  margin: 0 0 0 0;
+}
+
+section.logementCollapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.logementCollapse div.collapseContainer {
+  width: 582px;
+}
+section.logementCollapse div.collapseContainer div.collapseContenu {
+  min-height: 250px;
 }/*# sourceMappingURL=style.css.map */

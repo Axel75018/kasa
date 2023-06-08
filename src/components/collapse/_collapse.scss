@@ -5,7 +5,6 @@
 div.collapseContainer {
   margin: 0;
   padding: 0;
-  width: 50%;
   position: relative;
 
   div.collapseContenu {
@@ -16,12 +15,20 @@ div.collapseContainer {
     padding: 40px;
     z-index: 1;
 
+    ul {
+      list-style-type: none;
+      margin: 0;
+      li {
+        margin: 0;
+      }
+    }
+
     p {
       margin: 0;
       padding: 0;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 1.5;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25.67px;
       color: $ColorFirst;
     }
   }

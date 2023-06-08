@@ -1,9 +1,12 @@
 import React from "react";
 
-const BanniereHome = () => {
+const BanniereHome = ({ h2banniere, imageBanniere }) => {
   return (
-    <div className="banniereHome">
-      <h2>Chez vous, partout et ailleurs</h2>
+    <div
+      className="banniereHome"
+      style={{ backgroundImage: `url(${imageBanniere})` }}
+    >
+      <h2>{h2banniere}</h2>
     </div>
   );
 };
