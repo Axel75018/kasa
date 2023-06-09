@@ -14,7 +14,7 @@ const Collapse2 = ({ titre, contenu, hauteurTitreCollapse }) => {
       <div style={{ height: hauteurTitreCollapse }} className="collapseTitre">
         <h4>{titre}</h4>
         <img
-          src={collapse ? up : down}
+          src={up}
           alt={collapse ? "up" : "down"}
           onClick={togleCollapse}
           className={`chevronTogle ${collapse ? "rotateUp" : "rotateDown"}`} // change la classe en fonction de l'état du collapse
