@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import up from "../../assets/images/up.png";
-import down from "../../assets/images/down.png";
 
 const Collapse2 = ({ titre, contenu, hauteurTitreCollapse }) => {
   const [collapse, setCollapse] = useState(false);
@@ -10,7 +9,7 @@ const Collapse2 = ({ titre, contenu, hauteurTitreCollapse }) => {
   };
 
   return (
-    <div className="collapseContainer">
+    <div>
       <div style={{ height: hauteurTitreCollapse }} className="collapseTitre">
         <h4>{titre}</h4>
         <img
@@ -21,7 +20,7 @@ const Collapse2 = ({ titre, contenu, hauteurTitreCollapse }) => {
         />
       </div>
       <div className={`collapseContenu ${collapse ? "montre" : "cache"}`}>
-        <p>{contenu}</p>
+        <div> {contenu}</div>
       </div>
     </div>
   );

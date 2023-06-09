@@ -390,7 +390,7 @@ div.cardListContainer ul a :hover {
 }
 
 footer {
-  margin-top: 10px;
+  margin-top: 40px;
   background-color: black;
   color: white;
   height: 210px;
@@ -543,39 +543,50 @@ img.chevron.droite {
   display: none;
 }
 
-.cache {
-  display: none;
-}
-
-div.collapseContainer {
-  margin: 0;
-  padding: 0;
+div.collapseContenu {
   position: relative;
-}
-div.collapseContainer div.collapseContenu {
-  position: relative;
+  overflow: hidden;
   border-radius: 10px;
   background-color: rgb(246, 246, 246);
   margin: -20px 0 0 0;
   padding: 40px;
-  z-index: 1;
+  opacity: 0;
+  height: 0;
+  transform-origin: top;
+  transition: transform 0.4s ease-in-out;
 }
-div.collapseContainer div.collapseContenu ul {
+div.collapseContenu ul {
+  overflow: hidden;
   list-style-type: none;
   margin: 0;
 }
-div.collapseContainer div.collapseContenu ul li {
+div.collapseContenu ul li {
   margin: 0;
 }
-div.collapseContainer div.collapseContenu p {
+div.collapseContenu div {
   margin: 0;
   padding: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 25.67px;
   color: rgb(255, 96, 96);
+  height: 100%;
+  overflow: hidden;
 }
-div.collapseContainer div.collapseTitre {
+div.collapseContenu.montre {
+  opacity: 1;
+  height: 100%;
+  transform: scaleY(1);
+  transition: transform 1s ease-in-out;
+}
+div.collapseContenu.cache {
+  transform-origin: bottom;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: transform 1s ease-in-out;
+}
+
+div.collapseTitre {
   position: relative;
   border-radius: 10px;
   margin: 0;
@@ -584,16 +595,16 @@ div.collapseContainer div.collapseTitre {
   flex-direction: row;
   align-items: center;
   padding: 0 10px;
-  z-index: 10;
+  z-index: 2;
 }
-div.collapseContainer div.collapseTitre h4 {
+div.collapseTitre h4 {
   color: white;
   margin: 0;
   padding: 0;
   font-size: 18px;
   font-weight: 500;
 }
-div.collapseContainer div.collapseTitre img {
+div.collapseTitre img {
   width: 24px;
   height: 13px;
   margin: 0;
@@ -601,7 +612,7 @@ div.collapseContainer div.collapseTitre img {
   margin-left: auto;
   margin-right: 10px;
 }
-div.collapseContainer div.collapseTitre img:hover {
+div.collapseTitre img:hover {
   cursor: pointer;
 }
 
@@ -612,7 +623,7 @@ div.collapseContainer div.collapseTitre img:hover {
 
 .rotateDown {
   transform: rotate(180deg);
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
 div.page404 {
@@ -652,4 +663,19 @@ section.logementCollapse div.collapseContainer {
 }
 section.logementCollapse div.collapseContainer div.collapseContenu {
   min-height: 250px;
+  height: 100%;
+}
+
+section.aboutCollapse {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.aboutCollapse div.collapseContainer {
+  width: 1023px;
+  height: auto;
+}
+section.aboutCollapse div.collapseContainer div.collapseTitre {
+  height: 47px;
 }/*# sourceMappingURL=style.css.map */

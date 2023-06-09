@@ -1,0 +1,15 @@
+section.aboutCollapse {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div.collapseContainer {
+    width: 1023px;
+    height: auto;
+
+    div.collapseTitre {
+      height: 47px;
+    }
+  }
+}

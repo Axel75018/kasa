@@ -33,6 +33,12 @@ const Logements = () => {
         <article>
           <Carousel pictures={ficheLogement.pictures} />
           {/* / Passe les tableaux images du logement au composant Carousel */}
+          <h1>{ficheLogement.title}</h1>
+          <p>{ficheLogement.location}</p>
+          <p>{ficheLogement.host.name}</p>
+
+          <p>{ficheLogement.rating}</p>
+
           <section className="logementCollapse">
             <Collapse2
               titre={"Description"}

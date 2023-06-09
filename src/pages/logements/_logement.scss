@@ -4,8 +4,10 @@ section.logementCollapse {
   justify-content: space-between;
   div.collapseContainer {
     width: 582px;
+
     div.collapseContenu {
       min-height: 250px;
+      height: 100%;
     }
   }
 }
