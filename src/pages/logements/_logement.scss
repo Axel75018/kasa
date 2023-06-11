@@ -1,7 +1,8 @@
 section.logementCollapse {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 76px;
+  margin-top: 32px;
+  width: auto;
   div.collapseContainer {
     max-width: 582px;
     width: 100%;
@@ -35,6 +36,5 @@ section.logementCollapse {
   }
 }
 div.collapseContenu {
-  min-height: 250px;
-  height: 100%;
+  max-height: 800px;
 }

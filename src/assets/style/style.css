@@ -543,13 +543,17 @@ img.chevron.droite {
   display: none;
 }
 
+div.collapseContainer {
+  margin-bottom: 35px;
+}
+
 div.collapseContenu {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   background-color: rgb(246, 246, 246);
   margin: -20px 0 0 0;
-  padding: 40px;
+  padding: 30px 20px 20px 20px;
   opacity: 0;
   height: 0;
   transform-origin: top;
@@ -655,8 +659,9 @@ div.page404 h2 {
 
 section.logementCollapse {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 76px;
+  margin-top: 32px;
+  width: auto;
 }
 section.logementCollapse div.collapseContainer {
   max-width: 582px;
@@ -688,8 +693,7 @@ section.logementCollapse div.collapseContainer div.collapseTitre button {
 }
 
 div.collapseContenu {
-  min-height: 250px;
-  height: 100%;
+  max-height: 800px;
 }
 
 section.aboutCollapse {

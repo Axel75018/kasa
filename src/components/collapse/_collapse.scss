@@ -1,10 +1,14 @@
+div.collapseContainer {
+  margin-bottom: 35px;
+}
+
 div.collapseContenu {
   position: relative;
   overflow: hidden;
   border-radius: $radiusSecond;
   background-color: $bckColor;
   margin: -20px 0 0 0;
-  padding: 40px;
+  padding: 30px 20px 20px 20px;
   opacity: 0;
   height: 0;
   transform-origin: top;
