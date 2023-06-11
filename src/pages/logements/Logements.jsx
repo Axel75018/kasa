@@ -9,6 +9,8 @@ const Logements = () => {
   const { id } = useParams(); // Récupère l'ID depuis les paramètres de l'URL
   const navigate = useNavigate(); // Récupère la fonction navigate pour naviguer entre les pages
   const isValidId = logementJson.find((logement) => logement.id === id);
+  const logement = logementJson.find((logement) => logement.id === id);
+  const splitNom = logement.host.name.split(" "); // Sépare le nom et le prénom de l'hôte
   // check si l'ID correspond à un logement existant
 
   useEffect(() => {
@@ -33,23 +35,54 @@ const Logements = () => {
         <article>
           <Carousel pictures={ficheLogement.pictures} />
           {/* / Passe les tableaux images du logement au composant Carousel */}
-          <h1>{ficheLogement.title}</h1>
-          <p>{ficheLogement.location}</p>
-          <p>{ficheLogement.host.name}</p>
 
-          <p>{ficheLogement.rating}</p>
-          <ul>
-            {arrayNotes.map((Notes, index) => (
-              <li
-                key={index}
-                className={`note ${
-                  ficheLogement.rating - Notes >= 0 ? "etoile" : "etoilegrise"
-                }`}
-              >
-                *
-              </li>
-            ))}
-          </ul>
+          <section className="logementInfos">
+            <div className="titreLieuxTag">
+              <h1>{ficheLogement.title}</h1>
+              <h3>{ficheLogement.location}</h3>
+              <ul>
+                {ficheLogement.tags.map((tag, index) => (
+                  <li key={index}>
+                    <span>{tag}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="nomPhotoNotes">
+              <div className="nomPhoto">
+                <p>
+                  {splitNom.map((nomDecompose, index) => (
+                    <li key={index}>
+                      <span>
+                        {nomDecompose}
+                        <br />
+                      </span>
+                    </li>
+                  ))}
+                </p>
+                <img
+                  src={ficheLogement.host.picture}
+                  alt={ficheLogement.host.name}
+                />
+                <p>{ficheLogement.rating}</p>
+                <ul className="notes">
+                  {arrayNotes.map((Notes, index) => (
+                    <li
+                      key={index}
+                      className={`note ${
+                        ficheLogement.rating - Notes >= 0
+                          ? "etoile"
+                          : "etoilegrise"
+                      }`}
+                    >
+                      *
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
           <section className="logementCollapse">
             <Collapse2
               titre={"Description"}

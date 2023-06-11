@@ -38,3 +38,42 @@ section.logementCollapse {
 div.collapseContenu {
   max-height: 800px;
 }
+
+section.logementInfos {
+  margin-top: 10px;
+  div.titreLieuxTag {
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // gap: 10px;
+    // margin-bottom: 10px;
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 34.33px;
+      letter-spacing: 0em;
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      li {
+        list-style: none;
+        background-color: $ColorFirst;
+        min-width: 115px;
+        width: 20%;
+        padding: 3px;
+        color: white;
+        text-align: center;
+        border-radius: $radiusSecond;
+        span {
+          font-size: 14px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

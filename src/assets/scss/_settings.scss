@@ -19,4 +19,28 @@ body {
   font-family: Montserrat, sans-serif;
   padding: 0px 100px;
   max-width: 1440px;
+  color: $ColorFirst;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.67px;
+  letter-spacing: 0em;
+  margin: 0;
+  padding: 0;
+}
+div {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
 }

@@ -318,6 +318,32 @@ body {
   font-family: Montserrat, sans-serif;
   padding: 0px 100px;
   max-width: 1440px;
+  color: rgb(255, 96, 96);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.67px;
+  letter-spacing: 0em;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
 }
 
 div.cardListContainer {
@@ -695,6 +721,38 @@ section.logementCollapse div.collapseContainer div.collapseTitre button {
 
 div.collapseContenu {
   max-height: 800px;
+}
+
+section.logementInfos {
+  margin-top: 10px;
+}
+section.logementInfos div.titreLieuxTag h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34.33px;
+  letter-spacing: 0em;
+  margin: 0;
+  padding: 0;
+}
+section.logementInfos div.titreLieuxTag ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+section.logementInfos div.titreLieuxTag ul li {
+  list-style: none;
+  background-color: rgb(255, 96, 96);
+  min-width: 115px;
+  width: 20%;
+  padding: 3px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+section.logementInfos div.titreLieuxTag ul li span {
+  font-size: 14px;
+  margin: auto;
 }
 
 section.aboutCollapse {
