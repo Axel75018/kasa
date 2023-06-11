@@ -8,7 +8,6 @@ const Logements = () => {
   const { id } = useParams(); // Récupère l'ID depuis les paramètres de l'URL
   const navigate = useNavigate(); // Récupère la fonction navigate pour naviguer entre les pages
   const isValidId = logementJson.find((logement) => logement.id === id);
-  const hauteurTitreCollapse = 52; // Hauteur du titre du collapse
   // check si l'ID correspond à un logement existant
 
   useEffect(() => {
@@ -43,7 +42,6 @@ const Logements = () => {
             <Collapse2
               titre={"Description"}
               contenu={ficheLogement.description}
-              hauteurTitreCollapse={hauteurTitreCollapse}
             />
 
             <Collapse2
@@ -55,7 +53,6 @@ const Logements = () => {
                   ))}
                 </ul>
               }
-              hauteurTitreCollapse={hauteurTitreCollapse}
             />
           </section>
         </article>
