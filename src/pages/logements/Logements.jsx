@@ -50,7 +50,7 @@ const Logements = () => {
             </div>
             <div className="nomPhotoNotes">
               <div className="nomPhoto">
-                <p>
+                <ul className="Nom">
                   {splitNom.map((nomDecompose, index) => (
                     <li key={index}>
                       <span>
@@ -59,26 +59,24 @@ const Logements = () => {
                       </span>
                     </li>
                   ))}
-                </p>
+                </ul>
                 <img
                   src={ficheLogement.host.picture}
                   alt={ficheLogement.host.name}
                 />
-                <p>{ficheLogement.rating}</p>
-                <ul className="notes">
-                  {arrayNotes.map((Notes, index) => (
-                    <li
-                      key={index}
-                      className={`note ${
-                        ficheLogement.rating - Notes >= 0
-                          ? "etoile"
-                          : "etoilegrise"
-                      }`}
-                    >
-                      *
-                    </li>
-                  ))}
-                </ul>
+              </div>
+              <p>{ficheLogement.rating}</p>
+              <div className="notes">
+                {arrayNotes.map((Notes, index) => (
+                  <span
+                    key={index}
+                    className={`note ${
+                      ficheLogement.rating - Notes >= 0
+                        ? "etoile"
+                        : "etoilegrise"
+                    }`}
+                  ></span>
+                ))}
               </div>
             </div>
           </section>

@@ -40,10 +40,14 @@ div.collapseContenu {
 }
 
 section.logementInfos {
+  width: 100%;
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
   div.titreLieuxTag {
-    // display: flex;
-    // flex-direction: row;
+    width: 80%;
+    margin: 0;
+    padding: 0;
     // align-items: center;
     // gap: 10px;
     // margin-bottom: 10px;
@@ -76,4 +80,44 @@ section.logementInfos {
       }
     }
   }
+}
+div.nomPhotoNotes {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  div.nomPhoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    ul.Nom {
+      font-size: 18px;
+      text-align: right;
+      font-weight: 500;
+      font-style: normal;
+    }
+  }
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+.note {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.note.etoile {
+  background: url("../../assets/images/starup.png");
+  background-size: cover;
+}
+
+.note.etoilegrise {
+  background: url("../../assets/images/stardown.png");
+  background-size: cover;
 }

@@ -313,6 +313,12 @@ template {
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: auto;
   font-family: Montserrat, sans-serif;
@@ -451,12 +457,11 @@ header nav {
 }
 header nav a.linkNav {
   color: rgb(255, 96, 96);
-  font-size: 1.1rem;
   margin-left: 2rem;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 142.6%;
   text-align: right;
   text-decoration-line: none;
   text-transform: uppercase;
@@ -724,7 +729,15 @@ div.collapseContenu {
 }
 
 section.logementInfos {
+  width: 100%;
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+section.logementInfos div.titreLieuxTag {
+  width: 80%;
+  margin: 0;
+  padding: 0;
 }
 section.logementInfos div.titreLieuxTag h3 {
   font-size: 24px;
@@ -753,6 +766,48 @@ section.logementInfos div.titreLieuxTag ul li {
 section.logementInfos div.titreLieuxTag ul li span {
   font-size: 14px;
   margin: auto;
+}
+
+div.nomPhotoNotes {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+div.nomPhotoNotes div.nomPhoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+}
+div.nomPhotoNotes div.nomPhoto ul.Nom {
+  font-size: 18px;
+  text-align: right;
+  font-weight: 500;
+  font-style: normal;
+}
+div.nomPhotoNotes img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.note {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.note.etoile {
+  background: url("../../assets/images/starup.png");
+  background-size: cover;
+}
+
+.note.etoilegrise {
+  background: url("../../assets/images/stardown.png");
+  background-size: cover;
 }
 
 section.aboutCollapse {
