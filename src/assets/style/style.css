@@ -691,7 +691,7 @@ div.page404 h2 {
 
 section.logementCollapse {
   display: flex;
-  gap: 76px;
+  gap: 60px;
   margin-top: 32px;
   width: auto;
 }
@@ -701,7 +701,7 @@ section.logementCollapse div.collapseContainer {
 }
 section.logementCollapse div.collapseContainer div.collapseTitre {
   width: 100%;
-  height: 47px;
+  height: 52px;
   margin: 0;
   padding: 0;
   background-color: rgb(255, 96, 96);
@@ -738,6 +738,8 @@ section.logementInfos div.titreLieuxTag {
   width: 80%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 section.logementInfos div.titreLieuxTag h3 {
   font-size: 24px;
@@ -774,6 +776,7 @@ div.nomPhotoNotes {
   padding: 0;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 div.nomPhotoNotes div.nomPhoto {
   display: flex;
@@ -794,10 +797,16 @@ div.nomPhotoNotes img {
   object-fit: cover;
 }
 
+div.notes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .note {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 
 .note.etoile {

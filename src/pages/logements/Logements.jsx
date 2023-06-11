@@ -65,7 +65,7 @@ const Logements = () => {
                   alt={ficheLogement.host.name}
                 />
               </div>
-              <p>{ficheLogement.rating}</p>
+
               <div className="notes">
                 {arrayNotes.map((Notes, index) => (
                   <span
