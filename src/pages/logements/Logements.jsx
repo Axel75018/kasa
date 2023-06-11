@@ -5,6 +5,7 @@ import Carousel from "../../components/carousel/Carousel";
 import Collapse2 from "../../components/collapse/Collapse2";
 
 const Logements = () => {
+  const arrayNotes = [1, 2, 3, 4, 5];
   const { id } = useParams(); // Récupère l'ID depuis les paramètres de l'URL
   const navigate = useNavigate(); // Récupère la fonction navigate pour naviguer entre les pages
   const isValidId = logementJson.find((logement) => logement.id === id);
@@ -37,7 +38,18 @@ const Logements = () => {
           <p>{ficheLogement.host.name}</p>
 
           <p>{ficheLogement.rating}</p>
-
+          <ul>
+            {arrayNotes.map((Notes, index) => (
+              <li
+                key={index}
+                className={`note ${
+                  ficheLogement.rating - Notes >= 0 ? "etoile" : "etoilegrise"
+                }`}
+              >
+                *
+              </li>
+            ))}
+          </ul>
           <section className="logementCollapse">
             <Collapse2
               titre={"Description"}
