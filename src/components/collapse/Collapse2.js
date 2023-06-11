@@ -9,8 +9,8 @@ const Collapse2 = ({ titre, contenu, hauteurTitreCollapse }) => {
   };
 
   return (
-    <div>
-      <div style={{ height: hauteurTitreCollapse }} className="collapseTitre">
+    <div className="collapseContainer">
+      <div className="collapseTitre">
         <h4>{titre}</h4>
         <img
           src={up}

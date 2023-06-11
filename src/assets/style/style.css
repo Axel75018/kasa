@@ -659,9 +659,35 @@ section.logementCollapse {
   justify-content: space-between;
 }
 section.logementCollapse div.collapseContainer {
-  width: 582px;
+  max-width: 582px;
+  width: 100%;
 }
-section.logementCollapse div.collapseContainer div.collapseContenu {
+section.logementCollapse div.collapseContainer div.collapseTitre {
+  width: 100%;
+  height: 47px;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 96, 96);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 2;
+}
+section.logementCollapse div.collapseContainer div.collapseTitre h4 {
+  color: white;
+  margin: 0;
+}
+section.logementCollapse div.collapseContainer div.collapseTitre button {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+div.collapseContenu {
   min-height: 250px;
   height: 100%;
 }
