@@ -14,28 +14,24 @@ const About = () => {
           contenu={
             "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
           }
-          hauteurTitreCollapse={47}
         />
         <Collapse2
           titre={"Respect"}
           contenu={
             "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
           }
-          hauteurTitreCollapse={47}
         />
         <Collapse2
           titre={"Service"}
           contenu={
             "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
           }
-          hauteurTitreCollapse={47}
         />
         <Collapse2
           titre={"Sécurité"}
           contenu={
             "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
           }
-          hauteurTitreCollapse={47}
         />
       </section>
     </div>

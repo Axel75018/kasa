@@ -13,6 +13,10 @@ $radiusSecond: 10px;
 * {
   box-sizing: border-box;
 }
+div#root {
+  max-width: 1240px;
+  margin: 0 auto;
+}
 
 li {
   list-style: none;
@@ -21,10 +25,7 @@ li {
 }
 
 body {
-  margin: auto;
   font-family: Montserrat, sans-serif;
-  padding: 0px 100px;
-  max-width: 1440px;
   color: $ColorFirst;
 }
 h1 {

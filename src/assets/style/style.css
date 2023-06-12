@@ -313,6 +313,11 @@ template {
   box-sizing: border-box;
 }
 
+div#root {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 li {
   list-style: none;
   margin: 0;
@@ -320,10 +325,7 @@ li {
 }
 
 body {
-  margin: auto;
   font-family: Montserrat, sans-serif;
-  padding: 0px 100px;
-  max-width: 1440px;
   color: rgb(255, 96, 96);
 }
 
@@ -564,14 +566,6 @@ img.chevron.gauche {
 }
 img.chevron.droite {
   left: 92.26%;
-}
-
-.active {
-  display: block;
-}
-
-.hidden {
-  display: none;
 }
 
 div.collapseContainer {

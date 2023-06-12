@@ -5,7 +5,7 @@ import chevronDroite from "../../assets/images/chevronDroite.png";
 const Carousel = ({ pictures }) => {
   // prends un un tableau pictures  en prop.
   const [indexActuel, setIndex] = useState(0); // Hook useState l'état du indexActuel initialement  à 0.
-  const nbrPhoto = pictures.length; // Obtient le nombre total d'images dans le tableau.
+  const nbrPhoto = pictures.length; // Obtient le nombre total d'images dans le tableau pour comparer à l'index.
 
   return (
     <section className="carousel">
@@ -37,6 +37,8 @@ const Carousel = ({ pictures }) => {
           <div
             key={index}
             // Ajoute la classe 'active' si l'index de l'image actuelle correspond à indexActuel.
+            // Cela permet de faire apparaître l'image actuelle et de masquer les autres en jouant
+            // sur la height et width plutot que de les faire disparaitre avec display:none pour pouvoir l'animer.
             className={`carousel__container ${
               indexActuel === index ? "active" : ""
             }`}

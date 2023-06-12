@@ -8,6 +8,7 @@ const acceuil = () => {
   return (
     <div className="home">
       <BanniereHome h2banniere={h2banniere} imageBanniere={imageBanniereHome} />
+      {/* on passe le props h2banniere et imageBanniere dans le composant BanniereHome */}
 
       <Card />
     </div>
