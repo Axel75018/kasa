@@ -568,6 +568,14 @@ img.chevron.droite {
   left: 92.26%;
 }
 
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 div.collapseContainer {
   margin-bottom: 35px;
 }
