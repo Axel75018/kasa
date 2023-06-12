@@ -26,8 +26,6 @@ div.cardListContainer {
           border-radius: $radiusSecond;
           width: 340px;
           height: 340px;
-          -webkit-box-shadow: 11px 9px 15px 2px rgba(0, 0, 0, 0.41);
-          box-shadow: 11px 9px 15px 2px rgba(0, 0, 0, 0.41);
 
           img {
             width: 100%;
@@ -69,7 +67,7 @@ div.cardListContainer {
         }
       }
       :hover {
-        transition: box-shadow 0.4s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out;
         // -webkit-box-shadow: 11px 9px 15px 2px rgba(0, 0, 0, 0.41);
         box-shadow: 11px 9px 15px 2px rgba(0, 0, 0, 0.41);
       }

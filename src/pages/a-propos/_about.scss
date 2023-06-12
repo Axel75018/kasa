@@ -6,10 +6,13 @@ section.aboutCollapse {
 
   div.collapseContainer {
     width: 84%;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 
     div.collapseTitre {
       height: 47px;
+    }
+    div.collapseContenu.cache {
+      margin-bottom: 30px;
     }
   }
 }
