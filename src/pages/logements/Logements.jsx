@@ -6,42 +6,40 @@ import Collapse2 from "../../components/collapse/Collapse2";
 
 const Logements = () => {
   const arrayNotes = [1, 2, 3, 4, 5];
-  const { id } = useParams(); // Récupère l'ID depuis les paramètres de l'URL
-  const navigate = useNavigate(); // Récupère la fonction navigate pour naviguer entre les pages
-  const isValidId = logementJson.find((logement) => logement.id === id);
+  const { id } = useParams();
+  const navigate = useNavigate();
   const logement = logementJson.find((logement) => logement.id === id);
-  const splitNom = logement.host.name.split(" "); // Sépare le nom et le prénom de l'hôte
-  // check si l'ID correspond à un logement existant
 
   useEffect(() => {
     // Ce hook est exécuté à chaque fois que le composant est rendu
     // redirige vers la page 404 si l'ID du logement n'est pas valide
-    if (!isValidId) {
+    if (!logement) {
+      // Si logement undefined, on redirige vers la page 404
       navigate("/404");
     }
-  }, [isValidId, navigate]);
-  // Si isValid change, le hook sera à nouveau exécuté
+  }, [logement, navigate]);
+  // Si logement change, le hook sera à nouveau exécuté
 
-  if (!isValidId) {
+  if (!logement) {
     return null;
     // Si l'ID du logement n'est pas valide, le composant ne rend rien
-    //pour éviter un rendu avant la redirection
+    //pour éviter un rendu ou une avant la redirection
   } else {
     // Si l'ID est valide, le composant rend le logement correspondant
-    const ficheLogement = logementJson.find((logement) => logement.id === id); // Récupère les informations du logement
+    const splitNom = logement.host.name.split(" ");
 
     return (
       <div>
         <article>
-          <Carousel pictures={ficheLogement.pictures} />
+          <Carousel pictures={logement.pictures} />
           {/* / Passe les tableaux images du logement au composant Carousel */}
 
           <section className="logementInfos">
             <div className="titreLieuxTag">
-              <h1>{ficheLogement.title}</h1>
-              <h3>{ficheLogement.location}</h3>
+              <h1>{logement.title}</h1>
+              <h3>{logement.location}</h3>
               <ul>
-                {ficheLogement.tags.map((tag, index) => (
+                {logement.tags.map((tag, index) => (
                   <li key={index}>
                     <span>{tag}</span>
                   </li>
@@ -60,10 +58,7 @@ const Logements = () => {
                     </li>
                   ))}
                 </ul>
-                <img
-                  src={ficheLogement.host.picture}
-                  alt={ficheLogement.host.name}
-                />
+                <img src={logement.host.picture} alt={logement.host.name} />
               </div>
 
               <div className="notes">
@@ -71,9 +66,7 @@ const Logements = () => {
                   <span
                     key={index}
                     className={`note ${
-                      ficheLogement.rating - Notes >= 0
-                        ? "etoile"
-                        : "etoilegrise"
+                      logement.rating - Notes >= 0 ? "etoile" : "etoilegrise"
                     }`}
                   ></span>
                 ))}
@@ -82,16 +75,13 @@ const Logements = () => {
           </section>
 
           <section className="logementCollapse">
-            <Collapse2
-              titre={"Description"}
-              contenu={ficheLogement.description}
-            />
+            <Collapse2 titre={"Description"} contenu={logement.description} />
 
             <Collapse2
               titre={"Équipements"}
               contenu={
                 <ul>
-                  {ficheLogement.equipments.map((equipement, index) => (
+                  {logement.equipments.map((equipement, index) => (
                     <li key={index}>{equipement}</li>
                   ))}
                 </ul>
