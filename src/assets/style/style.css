@@ -328,6 +328,11 @@ body {
   font-family: Montserrat, sans-serif;
   color: rgb(255, 96, 96);
 }
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+}
 
 h1 {
   font-size: 36px;
@@ -685,9 +690,20 @@ section.logementCollapse {
   margin-top: 32px;
   width: auto;
 }
+@media screen and (max-width: 768px) {
+  section.logementCollapse {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
 section.logementCollapse div.collapseContainer {
   max-width: 582px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  section.logementCollapse div.collapseContainer {
+    margin-bottom: 20px;
+  }
 }
 section.logementCollapse div.collapseContainer div.collapseTitre {
   width: 100%;
@@ -700,6 +716,13 @@ section.logementCollapse div.collapseContainer div.collapseTitre {
   align-items: center;
   padding: 0 10px;
   z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  section.logementCollapse div.collapseContainer div.collapseTitre {
+    height: 30px;
+    font-size: 13px;
+    line-height: 142.6%;
+  }
 }
 section.logementCollapse div.collapseContainer div.collapseTitre h4 {
   color: white;
@@ -724,14 +747,26 @@ section.logementInfos {
   display: flex;
   flex-direction: row;
 }
-section.logementInfos div.titreLieuxTag {
+@media screen and (max-width: 768px) {
+  section.logementInfos {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+div.titreLieuxTag {
   width: 80%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
 }
-section.logementInfos div.titreLieuxTag h3 {
+@media screen and (max-width: 768px) {
+  div.titreLieuxTag {
+    width: 100%;
+  }
+}
+div.titreLieuxTag h3 {
   font-size: 18px;
   font-weight: 500;
   line-height: 142.6%;
@@ -739,7 +774,7 @@ section.logementInfos div.titreLieuxTag h3 {
   margin: 0;
   padding: 0;
 }
-section.logementInfos div.titreLieuxTag ul {
+div.titreLieuxTag ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -748,7 +783,7 @@ section.logementInfos div.titreLieuxTag ul {
   justify-content: flex-start;
   padding: 0;
 }
-section.logementInfos div.titreLieuxTag ul li {
+div.titreLieuxTag ul li {
   list-style: none;
   background-color: rgb(255, 96, 96);
   min-width: 115px;
@@ -758,7 +793,7 @@ section.logementInfos div.titreLieuxTag ul li {
   text-align: center;
   border-radius: 10px;
 }
-section.logementInfos div.titreLieuxTag ul li span {
+div.titreLieuxTag ul li span {
   font-size: 14px;
   margin: auto;
 }
@@ -770,6 +805,14 @@ div.nomPhotoNotes {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  div.nomPhotoNotes {
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 div.nomPhotoNotes div.nomPhoto {
   display: flex;
