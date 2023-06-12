@@ -43,9 +43,9 @@ div.collapseContenu {
 
   &.cache {
     transform-origin: bottom;
-    // opacity: 0;
+    opacity: 0;
     transform: scaleY(0);
-    transition: height 1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
     padding: 0;
     height: 0;
   }

@@ -423,7 +423,7 @@ div.cardListContainer ul a :hover {
 }
 
 footer {
-  margin-top: 40px;
+  margin-top: 10px;
   background-color: black;
   color: white;
   height: 210px;
@@ -498,7 +498,7 @@ div.banniereHome::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* noir avec 50% d'opacité */
+  background: rgba(0, 0, 0, 0.3); /* noir avec 30% d'opacité */
   border-radius: 25px;
   z-index: 1;
 }
@@ -613,8 +613,9 @@ div.collapseContenu.montre {
 }
 div.collapseContenu.cache {
   transform-origin: bottom;
+  opacity: 0;
   transform: scaleY(0);
-  transition: height 1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
   padding: 0;
   height: 0;
 }
@@ -751,6 +752,9 @@ section.logementInfos div.titreLieuxTag ul {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
 }
 section.logementInfos div.titreLieuxTag ul li {
   list-style: none;
@@ -823,8 +827,8 @@ section.aboutCollapse {
   align-items: center;
 }
 section.aboutCollapse div.collapseContainer {
-  width: 1023px;
-  height: auto;
+  width: 84%;
+  margin-bottom: 31px;
 }
 section.aboutCollapse div.collapseContainer div.collapseTitre {
   height: 47px;

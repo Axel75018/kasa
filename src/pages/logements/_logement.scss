@@ -64,6 +64,9 @@ section.logementInfos {
       flex-direction: row;
       align-items: center;
       gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 0;
       li {
         list-style: none;
         background-color: $ColorFirst;

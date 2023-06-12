@@ -6,7 +6,6 @@ import imageBanniereAbout from "..//..//assets//images//banner-about.jpg";
 const About = () => {
   return (
     <div>
-      <h1>A propos</h1>
       <BanniereHome h2banniere={""} imageBanniere={imageBanniereAbout} />
       <section className="aboutCollapse">
         <Collapse2
