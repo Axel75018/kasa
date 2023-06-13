@@ -4,6 +4,11 @@ div.cardListContainer {
   padding: 56px 10px;
   background-color: $bckColor;
   border-radius: $radiusFirst;
+  @media screen and (max-width: $breakpt) {
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: $radiusSecond;
+  }
   ul {
     width: 100%;
     display: flex;
@@ -14,6 +19,9 @@ div.cardListContainer {
     list-style: none;
     margin: 0;
     padding: 0;
+    @media screen and (max-width: $breakpt) {
+      gap: 20px;
+    }
     a {
       text-decoration: none;
       margin: 0;
@@ -26,6 +34,10 @@ div.cardListContainer {
           border-radius: $radiusSecond;
           width: 340px;
           height: 340px;
+          @media screen and (max-width: $breakpt) {
+            width: 335px;
+            height: 255px;
+          }
 
           img {
             width: 100%;
@@ -52,17 +64,22 @@ div.cardListContainer {
             z-index: 2;
           }
           h2 {
+            @media screen and (max-width: $breakpt) {
+              bottom: 15px;
+              left: 15px;
+              margin-right: 20px;
+            }
             font-size: 18px;
             color: white;
             font-weight: 500;
             position: absolute;
-            top: 278px;
+            bottom: 20px;
             left: 20px;
-            line-height: 26px;
+            margin-right: 20px;
+            line-height: 142.6%;
             z-index: 3;
             margin: 0;
             pointer-events: none;
-            height: 52px;
           }
         }
       }

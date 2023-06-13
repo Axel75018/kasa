@@ -9,10 +9,18 @@ header {
   /* flex-wrap: nowrap; */
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: $breakpt) {
+    height: 47px;
+    margin: 20px 0 20px 0;
+  }
 
-  img.logo {
+  img.Logo {
     width: 210px;
     height: 68px;
+    @media screen and (max-width: $breakpt) {
+      width: 145px;
+      height: 47px;
+    }
   }
   nav {
     justify-content: flex-end;
@@ -28,15 +36,19 @@ header {
       text-align: right;
       text-decoration-line: none;
       text-transform: uppercase;
+      @media screen and (max-width: $breakpt) {
+        font-size: 12px;
+        margin-left: 10px;
+      }
 
       &:hover {
-        border-bottom: $ColorFirst 3px solid;
-        padding-bottom: 5px;
+        border-bottom: $ColorFirst 1px solid;
+        // padding-bottom: 3px;
       }
     }
     .nav-active {
-      border-bottom: $ColorFirst 3px solid;
-      padding-bottom: 5px;
+      border-bottom: $ColorFirst 1px solid;
+      // padding-bottom: 1px;
     }
   }
 }

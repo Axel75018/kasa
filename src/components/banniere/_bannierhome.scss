@@ -9,6 +9,11 @@ div.banniereHome {
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (max-width: $breakpt) {
+    height: 111px;
+    margin-bottom: 22px;
+    border-radius: $radiusSecond;
+  }
 
   &::before {
     content: "";
@@ -20,6 +25,9 @@ div.banniereHome {
     background: rgba(0, 0, 0, 0.3); /* noir avec 30% d'opacité */
     border-radius: $radiusFirst;
     z-index: 1;
+    @media screen and (max-width: $breakpt) {
+      border-radius: $radiusSecond;
+    }
   }
 
   h2 {
@@ -30,5 +38,11 @@ div.banniereHome {
     font-weight: 500;
     left: 50%; /* centré horizontalement */
     transform: translate(-50%, 0%); /* décalage pour un centrage parfait */
+    @media screen and (max-width: $breakpt) {
+      font-size: 24px;
+      width: 217px;
+      line-height: 100%;
+      transform: translate(-73%, 0);
+    }
   }
 }

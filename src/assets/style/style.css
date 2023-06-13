@@ -358,6 +358,13 @@ div.cardListContainer {
   background-color: rgb(246, 246, 246);
   border-radius: 25px;
 }
+@media screen and (max-width: 768px) {
+  div.cardListContainer {
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 10px;
+  }
+}
 div.cardListContainer ul {
   width: 100%;
   display: flex;
@@ -368,6 +375,11 @@ div.cardListContainer ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 768px) {
+  div.cardListContainer ul {
+    gap: 20px;
+  }
 }
 div.cardListContainer ul a {
   text-decoration: none;
@@ -381,6 +393,12 @@ div.cardListContainer ul a li.Card article {
   border-radius: 10px;
   width: 340px;
   height: 340px;
+}
+@media screen and (max-width: 768px) {
+  div.cardListContainer ul a li.Card article {
+    width: 335px;
+    height: 255px;
+  }
 }
 div.cardListContainer ul a li.Card article img {
   width: 100%;
@@ -406,13 +424,20 @@ div.cardListContainer ul a li.Card article h2 {
   color: white;
   font-weight: 500;
   position: absolute;
-  top: 278px;
+  bottom: 20px;
   left: 20px;
-  line-height: 26px;
+  margin-right: 20px;
+  line-height: 142.6%;
   z-index: 3;
   margin: 0;
   pointer-events: none;
-  height: 52px;
+}
+@media screen and (max-width: 768px) {
+  div.cardListContainer ul a li.Card article h2 {
+    bottom: 15px;
+    left: 15px;
+    margin-right: 20px;
+  }
 }
 div.cardListContainer ul a :hover {
   transition: box-shadow 0.3s ease-in-out;
@@ -430,6 +455,12 @@ footer {
   justify-content: center;
   font-size: 24px;
   font-weight: 500;
+  line-height: 142.6%;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 12px;
+  }
 }
 footer img {
   width: 122px;
@@ -447,9 +478,21 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header img.logo {
+@media screen and (max-width: 768px) {
+  header {
+    height: 47px;
+    margin: 20px 0 20px 0;
+  }
+}
+header img.Logo {
   width: 210px;
   height: 68px;
+}
+@media screen and (max-width: 768px) {
+  header img.Logo {
+    width: 145px;
+    height: 47px;
+  }
 }
 header nav {
   justify-content: flex-end;
@@ -467,13 +510,17 @@ header nav a.linkNav {
   text-decoration-line: none;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  header nav a.linkNav {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
 header nav a.linkNav:hover {
-  border-bottom: rgb(255, 96, 96) 3px solid;
-  padding-bottom: 5px;
+  border-bottom: rgb(255, 96, 96) 1px solid;
 }
 header nav .nav-active {
-  border-bottom: rgb(255, 96, 96) 3px solid;
-  padding-bottom: 5px;
+  border-bottom: rgb(255, 96, 96) 1px solid;
 }
 
 div.banniereHome {
@@ -488,6 +535,13 @@ div.banniereHome {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 768px) {
+  div.banniereHome {
+    height: 111px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+  }
+}
 div.banniereHome::before {
   content: "";
   position: relative;
@@ -499,6 +553,11 @@ div.banniereHome::before {
   border-radius: 25px;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  div.banniereHome::before {
+    border-radius: 10px;
+  }
+}
 div.banniereHome h2 {
   position: absolute;
   z-index: 10;
@@ -507,6 +566,14 @@ div.banniereHome h2 {
   font-weight: 500;
   left: 50%; /* centré horizontalement */
   transform: translate(-50%, 0%); /* décalage pour un centrage parfait */
+}
+@media screen and (max-width: 768px) {
+  div.banniereHome h2 {
+    font-size: 24px;
+    width: 217px;
+    line-height: 100%;
+    transform: translate(-73%, 0);
+  }
 }
 
 section.carousel {
