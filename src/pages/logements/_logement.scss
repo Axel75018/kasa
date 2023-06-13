@@ -1,16 +1,19 @@
 section.logementCollapse {
   display: flex;
   gap: 60px;
-  margin-top: 32px;
+  margin-top: 24px;
   width: auto;
+
   @media screen and (max-width: $breakpt) {
     flex-direction: column;
     gap: 0px;
   }
   div.collapseContainer {
     @media screen and (max-width: $breakpt) {
+      padding-bottom: 20px;
       margin-bottom: 20px;
     }
+    padding-bottom: 14px;
     max-width: 582px;
     width: 100%;
 
@@ -58,7 +61,7 @@ section.logementInfos {
   flex-direction: row;
   @media screen and (max-width: $breakpt) {
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
   }
 }
 div.titreLieuxTag {
@@ -70,6 +73,17 @@ div.titreLieuxTag {
   @media screen and (max-width: $breakpt) {
     width: 100%;
   }
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 142.6%;
+    letter-spacing: 0em;
+    margin: 0;
+    padding: 0;
+    @media screen and (max-width: $breakpt) {
+      font-size: 18px;
+    }
+  }
 
   h3 {
     font-size: 18px;
@@ -78,6 +92,9 @@ div.titreLieuxTag {
     letter-spacing: 0em;
     margin: 0;
     padding: 0;
+    @media screen and (max-width: $breakpt) {
+      font-size: 14px;
+    }
   }
   ul {
     display: flex;
@@ -87,18 +104,27 @@ div.titreLieuxTag {
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 0;
+    margin-bottom: 0;
     li {
       list-style: none;
       background-color: $ColorFirst;
-      min-width: 115px;
-      width: 20%;
-      padding: 3px;
+      padding: 3px 3%;
       color: white;
       text-align: center;
       border-radius: $radiusSecond;
+      overflow: hidden;
+      @media screen and (max-width: $breakpt) {
+        min-width: 84px;
+        padding: 3px 15px;
+        // width: 30%;
+      }
       span {
+        width: fit-content;
+        display: inline-block;
         font-size: 14px;
-        margin: auto;
+        font-weight: 500;
+        line-height: 142.6%;
+        // margin: auto;
       }
     }
   }
@@ -121,6 +147,10 @@ div.nomPhotoNotes {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    @media screen and (max-width: $breakpt) {
+      justify-content: flex-start;
+      align-items: center;
+    }
 
     gap: 10px;
     ul.Nom {
@@ -128,6 +158,9 @@ div.nomPhotoNotes {
       text-align: right;
       font-weight: 500;
       font-style: normal;
+      @media screen and (max-width: $breakpt) {
+        font-size: 12px;
+      }
     }
   }
   img {
@@ -135,6 +168,10 @@ div.nomPhotoNotes {
     height: 64px;
     border-radius: 50%;
     object-fit: cover;
+    @media screen and (max-width: $breakpt) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 div.notes {
@@ -146,6 +183,10 @@ div.notes {
   display: inline-block;
   width: 24px;
   height: 24px;
+  @media screen and (max-width: $breakpt) {
+    width: 13px;
+    height: 13px;
+  }
 }
 
 .note.etoile {
