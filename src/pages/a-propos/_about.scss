@@ -5,14 +5,40 @@ section.aboutCollapse {
   align-items: center;
 
   div.collapseContainer {
-    width: 84%;
-    margin-bottom: 30px;
+    @media screen and (max-width: $breakpt) {
+      width: 100%;
+      margin-bottom: 20px;
+      min-height: 30px;
+    }
+    width: 83%;
+    margin-bottom: 31px;
+    min-height: 47px;
 
     div.collapseTitre {
       height: 47px;
+
+      @media screen and (max-width: $breakpt) {
+        padding: 0 7px;
+        h4 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 142.6%;
+          margin-left: 4px;
+        }
+        img {
+          width: 16px;
+          height: 9px;
+          margin-right: 0;
+        }
+      }
     }
+
     div.collapseContenu.cache {
-      margin-bottom: 30px;
+      margin-bottom: 0px;
+    }
+    div.collapseContenu.montre {
+      margin-bottom: 0px;
     }
   }
 }

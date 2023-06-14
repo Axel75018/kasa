@@ -1,5 +1,10 @@
 div.collapseContainer {
   margin-bottom: 35px;
+  @media screen and (max-width: $breakpt) {
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 30px;
+  }
 }
 
 div.collapseContenu {
@@ -27,6 +32,14 @@ div.collapseContenu {
   }
 
   div {
+    @media screen and (max-width: $breakpt) {
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 142.6%;
+    }
+
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -35,9 +48,6 @@ div.collapseContenu {
     color: $ColorFirst;
     height: 100%;
     overflow: hidden;
-    @media screen and (max-width: $breakpt) {
-      font-size: 12px;
-    }
   }
 
   &.montre {
@@ -67,10 +77,15 @@ div.collapseTitre {
   align-items: center;
   padding: 0 10px;
   z-index: 2;
+  @media screen and (max-width: $breakpt) {
+    border-radius: 5px;
+    padding: 0 7px;
+    height: 30px;
+  }
 
   h4 {
     color: white;
-    margin: 0;
+    margin-left: 8px;
     padding: 0;
     font-size: 18px;
     font-weight: 500;
@@ -81,12 +96,17 @@ div.collapseTitre {
   img {
     width: 24px;
     height: 13px;
-    margin: 0;
     padding: 0;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 23px;
     &:hover {
       cursor: pointer;
+    }
+
+    @media screen and (max-width: $breakpt) {
+      width: 16px;
+      height: 9px;
+      margin-right: 0;
     }
   }
 }

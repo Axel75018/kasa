@@ -3,26 +3,17 @@ section.logementCollapse {
   gap: 60px;
   margin-top: 24px;
   width: auto;
+  margin-bottom: 25px;
 
   @media screen and (max-width: $breakpt) {
     flex-direction: column;
     gap: 0px;
   }
   div.collapseContainer {
-    @media screen and (max-width: $breakpt) {
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-    }
-    padding-bottom: 14px;
     max-width: 582px;
     width: 100%;
 
     div.collapseTitre {
-      @media screen and (max-width: $breakpt) {
-        height: 30px;
-        font-size: 13px;
-        line-height: 142.6%;
-      }
       width: 100%;
       height: 52px;
       margin: 0;
@@ -33,20 +24,26 @@ section.logementCollapse {
       align-items: center;
       padding: 0 10px;
       z-index: 2;
+      @media screen and (max-width: $breakpt) {
+        height: 30px;
+      }
 
       h4 {
         color: white;
-        margin: 0;
+        margin-left: 10px;
+      }
+      img {
+        margin-right: 3px;
       }
 
-      button {
-        margin-left: auto;
-        background-color: transparent;
-        border: none;
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
-      }
+      // button {
+      //   margin-left: auto;
+      //   background-color: transparent;
+      //   border: none;
+      //   color: white;
+      //   font-size: 24px;
+      //   cursor: pointer;
+      // }
     }
   }
 }
@@ -124,7 +121,9 @@ div.titreLieuxTag {
         font-size: 14px;
         font-weight: 500;
         line-height: 142.6%;
-        // margin: auto;
+        @media screen and (max-width: $breakpt) {
+          font-size: 10px;
+        }
       }
     }
   }
@@ -186,6 +185,7 @@ div.notes {
   @media screen and (max-width: $breakpt) {
     width: 13px;
     height: 13px;
+    margin-right: 6px;
   }
 }
 

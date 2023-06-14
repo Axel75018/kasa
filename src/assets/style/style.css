@@ -662,6 +662,13 @@ img.chevron.droite {
 div.collapseContainer {
   margin-bottom: 35px;
 }
+@media screen and (max-width: 768px) {
+  div.collapseContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 30px;
+  }
+}
 
 div.collapseContenu {
   position: relative;
@@ -700,7 +707,11 @@ div.collapseContenu div {
 }
 @media screen and (max-width: 768px) {
   div.collapseContenu div {
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
     font-size: 12px;
+    line-height: 142.6%;
   }
 }
 div.collapseContenu.montre {
@@ -729,9 +740,16 @@ div.collapseTitre {
   padding: 0 10px;
   z-index: 2;
 }
+@media screen and (max-width: 768px) {
+  div.collapseTitre {
+    border-radius: 5px;
+    padding: 0 7px;
+    height: 30px;
+  }
+}
 div.collapseTitre h4 {
   color: white;
-  margin: 0;
+  margin-left: 8px;
   padding: 0;
   font-size: 18px;
   font-weight: 500;
@@ -744,13 +762,19 @@ div.collapseTitre h4 {
 div.collapseTitre img {
   width: 24px;
   height: 13px;
-  margin: 0;
   padding: 0;
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 23px;
 }
 div.collapseTitre img:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  div.collapseTitre img {
+    width: 16px;
+    height: 9px;
+    margin-right: 0;
+  }
 }
 
 .rotateUp {
@@ -816,6 +840,7 @@ section.logementCollapse {
   gap: 60px;
   margin-top: 24px;
   width: auto;
+  margin-bottom: 25px;
 }
 @media screen and (max-width: 768px) {
   section.logementCollapse {
@@ -824,15 +849,8 @@ section.logementCollapse {
   }
 }
 section.logementCollapse div.collapseContainer {
-  padding-bottom: 14px;
   max-width: 582px;
   width: 100%;
-}
-@media screen and (max-width: 768px) {
-  section.logementCollapse div.collapseContainer {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-  }
 }
 section.logementCollapse div.collapseContainer div.collapseTitre {
   width: 100%;
@@ -849,21 +867,14 @@ section.logementCollapse div.collapseContainer div.collapseTitre {
 @media screen and (max-width: 768px) {
   section.logementCollapse div.collapseContainer div.collapseTitre {
     height: 30px;
-    font-size: 13px;
-    line-height: 142.6%;
   }
 }
 section.logementCollapse div.collapseContainer div.collapseTitre h4 {
   color: white;
-  margin: 0;
+  margin-left: 10px;
 }
-section.logementCollapse div.collapseContainer div.collapseTitre button {
-  margin-left: auto;
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
+section.logementCollapse div.collapseContainer div.collapseTitre img {
+  margin-right: 3px;
 }
 
 div.collapseContenu {
@@ -953,6 +964,11 @@ div.titreLieuxTag ul li span {
   font-weight: 500;
   line-height: 142.6%;
 }
+@media screen and (max-width: 768px) {
+  div.titreLieuxTag ul li span {
+    font-size: 10px;
+  }
+}
 
 div.nomPhotoNotes {
   width: 20%;
@@ -1021,6 +1037,7 @@ div.notes {
   .note {
     width: 13px;
     height: 13px;
+    margin-right: 6px;
   }
 }
 
@@ -1041,12 +1058,40 @@ section.aboutCollapse {
   align-items: center;
 }
 section.aboutCollapse div.collapseContainer {
-  width: 84%;
-  margin-bottom: 30px;
+  width: 83%;
+  margin-bottom: 31px;
+  min-height: 47px;
+}
+@media screen and (max-width: 768px) {
+  section.aboutCollapse div.collapseContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 30px;
+  }
 }
 section.aboutCollapse div.collapseContainer div.collapseTitre {
   height: 47px;
 }
+@media screen and (max-width: 768px) {
+  section.aboutCollapse div.collapseContainer div.collapseTitre {
+    padding: 0 7px;
+  }
+  section.aboutCollapse div.collapseContainer div.collapseTitre h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 142.6%;
+    margin-left: 4px;
+  }
+  section.aboutCollapse div.collapseContainer div.collapseTitre img {
+    width: 16px;
+    height: 9px;
+    margin-right: 0;
+  }
+}
 section.aboutCollapse div.collapseContainer div.collapseContenu.cache {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+}
+section.aboutCollapse div.collapseContainer div.collapseContenu.montre {
+  margin-bottom: 0px;
 }/*# sourceMappingURL=style.css.map */
