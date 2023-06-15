@@ -449,6 +449,7 @@ div.cardListContainer ul a li.Card article h2 {
   z-index: 3;
   margin: 0;
   pointer-events: none;
+  width: 88%;
 }
 @media screen and (max-width: 768px) {
   div.cardListContainer ul a li.Card article h2 {
