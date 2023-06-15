@@ -351,7 +351,7 @@ h3 {
 }
 
 div.cardListContainer {
-  padding: 56px 10px;
+  padding: 56px 0;
   background-color: rgb(246, 246, 246);
   border-radius: 25px;
 }
@@ -362,16 +362,29 @@ div.cardListContainer {
     border-radius: 10px;
   }
 }
+@media screen and (max-width: 1024px) {
+  div.cardListContainer {
+    background-color: white;
+    padding: 0;
+    border-radius: 0;
+  }
+}
 div.cardListContainer ul {
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 60px 50px;
+  gap: 65px 50px;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 1024px) {
+  div.cardListContainer ul {
+    gap: 40px 0px;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 768px) {
   div.cardListContainer ul {
@@ -394,8 +407,8 @@ div.cardListContainer ul a li.Card article {
 }
 @media screen and (max-width: 1024px) {
   div.cardListContainer ul a li.Card article {
-    width: 700px;
-    height: 255px;
+    width: 100%;
+    height: 300px;
   }
 }
 @media screen and (max-width: 768px) {
