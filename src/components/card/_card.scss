@@ -6,7 +6,7 @@ div.cardListContainer {
   border-radius: $radiusFirst;
   @media screen and (max-width: $breakpt) {
     background-color: white;
-    padding: 0px 10px;
+    padding: 0;
     border-radius: $radiusSecond;
   }
   ul {
@@ -20,7 +20,8 @@ div.cardListContainer {
     margin: 0;
     padding: 0;
     @media screen and (max-width: $breakpt) {
-      gap: 20px;
+      gap: 20px 0;
+      flex-direction: column;
     }
     a {
       text-decoration: none;
@@ -34,8 +35,12 @@ div.cardListContainer {
           border-radius: $radiusSecond;
           width: 340px;
           height: 340px;
+          @media screen and (max-width: $breaktablet) {
+            width: 700px;
+            height: 255px;
+          }
           @media screen and (max-width: $breakpt) {
-            width: 335px;
+            width: 100%;
             height: 255px;
           }
 

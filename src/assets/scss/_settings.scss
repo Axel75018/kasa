@@ -30,9 +30,7 @@ li {
 body {
   font-family: Montserrat, sans-serif;
   color: $ColorFirst;
-  @media screen and (max-width: $breakpt) {
-    padding: 0 20px;
-  }
+  padding: 0 20px;  
 }
 
 h1 {
