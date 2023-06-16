@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../../components/card/Card";
-import imageBanniereHome from "..//..//assets//images//banner-home.jpg";
+import imageBanniereHome from "../../assets/images/banner-home.jpg";
 import BanniereHome from "../../components/banniere/BanniereHome";
 
 const acceuil = () => {

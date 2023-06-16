@@ -3,7 +3,7 @@ import chevronGauche from "../../assets/images/chevronGauche.png"; // Importe l'
 import chevronDroite from "../../assets/images/chevronDroite.png";
 
 const Carousel = ({ pictures }) => {
-  // prends un un tableau pictures  en prop.
+  // prends un un tableau pictures  en props.
   const [indexActuel, setIndex] = useState(0); // Hook useState l'état du indexActuel initialement  à 0.
   const nbrPhoto = pictures.length; // Obtient le nombre total d'images dans le tableau pour comparer à l'index.
 

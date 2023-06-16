@@ -1,7 +1,7 @@
 import React from "react";
 import Collapse2 from "../../components/collapse/Collapse2";
 import BanniereHome from "../../components/banniere/BanniereHome";
-import imageBanniereAbout from "..//..//assets//images//banner-about.jpg";
+import imageBanniereAbout from "../../assets/images/banner-about.jpg";
 
 const About = () => {
   return (

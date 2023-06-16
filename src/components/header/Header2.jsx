@@ -23,7 +23,7 @@ const Header2 = () => {
               nav.isActive ? "nav-active linkNav" : "linkNav"
             }
           >
-            A propos
+            A Propos
           </NavLink>
         </nav>
       </header>
