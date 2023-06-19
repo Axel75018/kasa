@@ -18,14 +18,14 @@ const Logements = () => {
       navigate("/404");
     }
   }, [logement, navigate]);
-  // Si logement change, le hook sera à nouveau exécuté
+  // Si logement ou navigate change, le hook sera à nouveau exécuté
 
   if (!logement) {
     return null;
     // Si l'ID du logement n'est pas valide, le composant ne rend rien
     //pour éviter un rendu ou une avant la redirection
   } else {
-    // Si l'ID est valide, le composant rend le logement correspondant
+    // Si l'ID est valide on peux travailer sur le logement
     const splitNom = logement.host.name.split(" ");
 
     return (

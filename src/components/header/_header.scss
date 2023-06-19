@@ -17,12 +17,14 @@ header {
   img.Logo {
     width: 210px;
     height: 68px;
+    border: none;
     @media screen and (max-width: $breakpt) {
       width: 145px;
       height: 47px;
     }
   }
   nav {
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     top: 50%;
@@ -45,9 +47,13 @@ header {
         // padding-bottom: 3px;
       }
     }
-    .nav-active {
-      border-bottom: $ColorFirst 1px solid;
-      // padding-bottom: 1px;
-    }
   }
+}
+header a.Logo {
+  border: none;
+  color: $ColorFirst;
+}
+.active {
+  border-bottom: $ColorFirst 1px solid;
+  // padding-bottom: 1px;
 }

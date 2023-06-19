@@ -13,6 +13,11 @@ footer {
   @media screen and (max-width: $breakpt) {
     font-size: 12px;
   }
+
+  .lienFooter {
+    border: none;
+  }
+
   img {
     width: 122px;
     height: 39px;

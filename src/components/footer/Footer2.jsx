@@ -6,8 +6,9 @@ const Footer2 = () => {
   return (
     <div>
       <footer>
-      <NavLink to="/">
-        <img src={LOGOnb} alt="Kasa" className="LogoFooter"/></NavLink>
+        <NavLink to="/" className="lienFooter">
+          <img src={LOGOnb} alt="Kasa" className="LogoFooter" />
+        </NavLink>
         <p>© 2020 Kasa. All rights reserved</p>
       </footer>
     </div>

@@ -479,6 +479,9 @@ footer {
     font-size: 12px;
   }
 }
+footer .lienFooter {
+  border: none;
+}
 footer img {
   width: 122px;
   height: 39px;
@@ -504,6 +507,7 @@ header {
 header img.Logo {
   width: 210px;
   height: 68px;
+  border: none;
 }
 @media screen and (max-width: 768px) {
   header img.Logo {
@@ -512,6 +516,7 @@ header img.Logo {
   }
 }
 header nav {
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   top: 50%;
@@ -535,7 +540,13 @@ header nav a.linkNav {
 header nav a.linkNav:hover {
   border-bottom: rgb(255, 96, 96) 1px solid;
 }
-header nav .nav-active {
+
+header a.Logo {
+  border: none;
+  color: rgb(255, 96, 96);
+}
+
+.active {
   border-bottom: rgb(255, 96, 96) 1px solid;
 }
 
@@ -602,6 +613,7 @@ div.carousel__container {
   margin: 0;
   height: 0;
   width: 0;
+  border: none;
   position: relative;
   z-index: 2;
   transition: width 0.6s ease-out;
