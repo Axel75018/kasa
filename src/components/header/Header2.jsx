@@ -10,13 +10,13 @@ const Header2 = () => {
           <img src={logo} alt="KASA" className="Logo" />
         </NavLink>
         <nav>
-          <NavLink to="/" className="linkNav" activeClassName="nav-active">
+          <NavLink to="/" className="linkNav" activeclassname="nav-active">
             Accueil
           </NavLink>
           <NavLink
             to="/a-propos"
             className="linkNav"
-            activeClassName="nav-active"
+            activeclassname="nav-active"
           >
             A Propos
           </NavLink>
