@@ -39,16 +39,16 @@ div.banniere {
     left: 50%; /* centré horizontalement */
     transform: translate(-50%, 0%); /* décalage pour un centrage parfait */
     @media screen and (max-width: $breaktablet) {
-      font-size: 24px;
+      font-size: 36px;
       width: 90%;
       line-height: 100%;
-      transform: translate(-35%, 0);
+      // transform: translate(-50%, 0);
     }
     @media screen and (max-width: $breakpt) {
       font-size: 24px;
       width: 200px;
       line-height: 100%;
-      transform: translate(-50%, 0);
+      // transform: translate(-50%, 0);
     }
     
   }
