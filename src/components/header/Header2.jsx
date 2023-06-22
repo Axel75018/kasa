@@ -6,17 +6,17 @@ const Header2 = () => {
   return (
     <div>
       <header>
-        <NavLink className="Logo" to="/">
-          <img src={logo} alt="KASA" className="Logo" />
+        <NavLink className="header__link__logo" to="/">
+          <img src={logo} alt="KASA" className="header__logo" />
         </NavLink>
         <nav>
-          <NavLink to="/" className="linkNav" activeclassname="nav-active">
+          <NavLink to="/" className="nav__link" activeclassname="nav__link--active">
             Accueil
           </NavLink>
           <NavLink
             to="/a-propos"
-            className="linkNav"
-            activeclassname="nav-active"
+            className="nav__link"
+            activeclassname="nav__link--active"
           >
             A Propos
           </NavLink>

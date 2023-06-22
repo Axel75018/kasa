@@ -1,4 +1,4 @@
-div.banniereHome {
+div.banniere {
   margin-bottom: 43px;
   align-items: center;
   border-radius: $radiusFirst;
@@ -30,7 +30,7 @@ div.banniereHome {
     }
   }
 
-  h2 {
+  .banniere__h2 {
     position: absolute;
     z-index: 10;
     color: white;
@@ -38,17 +38,18 @@ div.banniereHome {
     font-weight: 500;
     left: 50%; /* centré horizontalement */
     transform: translate(-50%, 0%); /* décalage pour un centrage parfait */
-    @media screen and (max-width: $breakpt) {
-      font-size: 24px;
-      width: 217px;
-      line-height: 100%;
-      transform: translate(-73%, 0);
-    }
     @media screen and (max-width: $breaktablet) {
       font-size: 24px;
       width: 90%;
       line-height: 100%;
       transform: translate(-35%, 0);
     }
+    @media screen and (max-width: $breakpt) {
+      font-size: 24px;
+      width: 200px;
+      line-height: 100%;
+      transform: translate(-50%, 0);
+    }
+    
   }
 }

@@ -4,10 +4,10 @@ const BanniereHome = ({ h2banniere, imageBanniere }) => {
   //props h2 pour le texte et image
   return (
     <div
-      className="banniereHome"
+      className="banniere"
       style={{ backgroundImage: `url(${imageBanniere})` }}
     >
-      <h2>{h2banniere}</h2>
+      <h2 className="banniere__h2">{h2banniere}</h2>
     </div>
   );
 };

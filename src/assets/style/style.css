@@ -481,10 +481,10 @@ footer {
     font-size: 12px;
   }
 }
-footer .lienFooter {
+footer .footer__lien {
   border: none;
 }
-footer img {
+footer .footer__logo {
   width: 122px;
   height: 39px;
 }
@@ -506,13 +506,17 @@ header {
     margin: 20px 0 20px 0;
   }
 }
-header img.Logo {
+header .header__link__logo {
+  border: none;
+  color: rgb(255, 96, 96);
+}
+header .header__logo {
   width: 210px;
   height: 68px;
   border: none;
 }
 @media screen and (max-width: 768px) {
-  header img.Logo {
+  header .header__logo {
     width: 145px;
     height: 47px;
   }
@@ -523,7 +527,7 @@ header nav {
   align-items: center;
   top: 50%;
 }
-header nav a.linkNav {
+header nav .nav__link {
   color: rgb(255, 96, 96);
   margin-left: 2rem;
   font-size: 24px;
@@ -534,25 +538,19 @@ header nav a.linkNav {
   text-decoration-line: none;
 }
 @media screen and (max-width: 768px) {
-  header nav a.linkNav {
+  header nav .nav__link {
     font-size: 12px;
     margin-left: 10px;
   }
 }
-header nav a.linkNav:hover {
+header nav .nav__link:hover {
+  border-bottom: rgb(255, 96, 96) 1px solid;
+}
+header nav .active {
   border-bottom: rgb(255, 96, 96) 1px solid;
 }
 
-header a.Logo {
-  border: none;
-  color: rgb(255, 96, 96);
-}
-
-.active {
-  border-bottom: rgb(255, 96, 96) 1px solid;
-}
-
-div.banniereHome {
+div.banniere {
   margin-bottom: 43px;
   align-items: center;
   border-radius: 25px;
@@ -565,13 +563,13 @@ div.banniereHome {
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
-  div.banniereHome {
+  div.banniere {
     height: 111px;
     margin-bottom: 22px;
     border-radius: 10px;
   }
 }
-div.banniereHome::before {
+div.banniere::before {
   content: "";
   position: relative;
   top: 0;
@@ -583,11 +581,11 @@ div.banniereHome::before {
   z-index: 1;
 }
 @media screen and (max-width: 768px) {
-  div.banniereHome::before {
+  div.banniere::before {
     border-radius: 10px;
   }
 }
-div.banniereHome h2 {
+div.banniere .banniere__h2 {
   position: absolute;
   z-index: 10;
   color: white;
@@ -596,20 +594,20 @@ div.banniereHome h2 {
   left: 50%; /* centré horizontalement */
   transform: translate(-50%, 0%); /* décalage pour un centrage parfait */
 }
-@media screen and (max-width: 768px) {
-  div.banniereHome h2 {
-    font-size: 24px;
-    width: 217px;
-    line-height: 100%;
-    transform: translate(-73%, 0);
-  }
-}
 @media screen and (max-width: 1024px) {
-  div.banniereHome h2 {
+  div.banniere .banniere__h2 {
     font-size: 24px;
     width: 90%;
     line-height: 100%;
     transform: translate(-35%, 0);
+  }
+}
+@media screen and (max-width: 768px) {
+  div.banniere .banniere__h2 {
+    font-size: 24px;
+    width: 200px;
+    line-height: 100%;
+    transform: translate(-50%, 0);
   }
 }
 

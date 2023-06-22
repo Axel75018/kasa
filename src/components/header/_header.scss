@@ -13,8 +13,12 @@ header {
     height: 47px;
     margin: 20px 0 20px 0;
   }
+  .header__link__logo {
+    border: none;
+    color: $ColorFirst;
+  }
 
-  img.Logo {
+  .header__logo {
     width: 210px;
     height: 68px;
     border: none;
@@ -28,7 +32,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     top: 50%;
-    a.linkNav {
+    .nav__link {
       color: $ColorFirst;
       margin-left: 2rem;
       font-size: 24px;
@@ -40,20 +44,18 @@ header {
       @media screen and (max-width: $breakpt) {
         font-size: 12px;
         margin-left: 10px;
-      }
+      }   
+      
 
       &:hover {
         border-bottom: $ColorFirst 1px solid;
         // padding-bottom: 3px;
       }
     }
+     .active {
+      border-bottom: $ColorFirst 1px solid;
+      // padding-bottom: 1px;
+    }
   }
 }
-header a.Logo {
-  border: none;
-  color: $ColorFirst;
-}
-.active {
-  border-bottom: $ColorFirst 1px solid;
-  // padding-bottom: 1px;
-}
+
