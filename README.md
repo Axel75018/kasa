@@ -1,5 +1,3 @@
-Lien :
-[http://app.axpic.fr/](http://app.axpic.fr/)
 
 # Getting Started with Create React App
 
